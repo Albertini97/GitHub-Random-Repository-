@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Repositorios de GitHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Buscador de Repositorios de GitHub</h1>
+        <select id="language-select">
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="c++">C++</option>
+            <!-- Agrega más opciones según sea necesario -->
+        </select>
+        <button id="fetch-repo">Buscar Repositorio Aleatorio</button>
+        <div id="repo-info" class="hidden">
+            <h2 id="repo-name"></h2>
+            <p id="repo-description"></p>
+            <p>⭐ <span id="repo-stars"></span></p>
+            <p>🍴 <span id="repo-forks"></span></p>
+            <p>⚠️ <span id="repo-issues"></span></p>
+            <button id="refresh-repo">Refrescar</button>
+        </div>
+        <div id="loading" class="hidden">Cargando...</div>
+        <div id="error" class="hidden">Hubo un error al cargar el repositorio.</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
